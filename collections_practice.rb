@@ -98,4 +98,13 @@ def find_cool(array)
 end
 
 def organize_schools(array)
+  locations = {}
+  array.map { |k, v| locations[v[:location]] = [] }
+  locations.each do |key, value|
+    array.each do |key2, value2|
+      if key == value2[:location]
+        value << key2
+      end
+    end
+  end
 end
