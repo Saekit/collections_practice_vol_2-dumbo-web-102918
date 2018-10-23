@@ -1,7 +1,5 @@
 def begins_with_r(tools)
-  tools.all? do |word|
-    word.start_with?("r")
-  end
+  tools.all? {|word| word.start_with?("r")}
 end
 
 def contain_a(array)
