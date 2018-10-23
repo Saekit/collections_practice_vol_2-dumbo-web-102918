@@ -67,11 +67,14 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-  array = []
+  array.uniq.each do |word|
   count = 0
-  array.each do |hash|
-    binding.pry
+  array.each do |word2|
+    if word2 == word1
+      count += 1
+    end
   end
+  word[:count] = count
 end
 
 def merge_data(keys, data)
