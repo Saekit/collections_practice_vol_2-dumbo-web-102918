@@ -79,7 +79,15 @@ def count_elements(array)
 end
 
 def merge_data(keys, data)
-  keys.concat(data)
+  final = []
+  keys.each do |elem|
+    data.first.map do |k, v|
+      if elem.values[0] == k
+        final << elem.merge(v)
+      end
+    end
+  end
+  final
 end
 
 
