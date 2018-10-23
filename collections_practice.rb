@@ -92,6 +92,9 @@ end
 
 
 def find_cool(array)
+  array.select do |hash|
+    hash.any? {|k, v| v == "cool"}
+  end 
 end
 
 def organize_schools(array)
