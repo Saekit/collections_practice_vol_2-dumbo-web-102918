@@ -70,7 +70,7 @@ def count_elements(array)
   array.uniq.each do |word|
   count = 0
     array.each do |word2|
-      if word2 == word1
+      if word2 == word
         count += 1
       end
     end
