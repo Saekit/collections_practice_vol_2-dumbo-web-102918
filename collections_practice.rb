@@ -1,3 +1,5 @@
+require 'pry'
+
 # def begins_with_r(tools)
 #   tools.all? {|word| word.start_with?("r")}
 # end
@@ -65,6 +67,11 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
+  array = []
+  count = 0
+  array.each do |hash|
+    binding.pry
+  end
 end
 
 def merge_data(keys, data)
