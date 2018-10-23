@@ -69,13 +69,13 @@ end
 def count_elements(array)
   array.uniq.each do |word|
   count = 0
-  array.each do |word2|
-    if word2 == word1
-      count += 1
+    array.each do |word2|
+      if word2 == word1
+        count += 1
+      end
     end
+    word[:count] = count
   end
-  word[:count] = count
-end
 end
 
 def merge_data(keys, data)
