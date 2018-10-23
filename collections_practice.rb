@@ -76,6 +76,7 @@ def count_elements(array)
   end
   word[:count] = count
 end
+end
 
 def merge_data(keys, data)
 end
