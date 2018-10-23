@@ -79,7 +79,7 @@ def count_elements(array)
 end
 
 def merge_data(keys, data)
-  keys.merge(data)
+  keys.concat(data)
 end
 
 
